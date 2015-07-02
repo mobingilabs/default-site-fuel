@@ -5,10 +5,13 @@
 
 return array(
 	'default' => array(
+		'type' => 'mysqli'
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_dev',
-			'username'   => 'root',
-			'password'   => 'root',
+			'hostname'   => getenv("MYSQLPROXY_PORT_3306_TCP_ADDR"),
+			'port'       => getenv("MYSQLPROXY_PORT_3306_TCP_PORT"),
+			'database'   => getenv("MOCLOUD_DATABASE_NAME"),
+			'username'   => getenv("MOCLOUD_DATABASE_USERNAME"),
+			'password'   => getenv("MOCLOUD_DATABASE_PASSWORD"),
 		),
 	),
 );
