@@ -5,7 +5,7 @@
 
 return array(
 	'default' => array(
-		'type' => 'mysqli'
+		'type' => 'mysqli',
 		'connection'  => array(
 			'hostname'   => getenv("MYSQLPROXY_PORT_3306_TCP_ADDR"),
 			'port'       => getenv("MYSQLPROXY_PORT_3306_TCP_PORT"),
